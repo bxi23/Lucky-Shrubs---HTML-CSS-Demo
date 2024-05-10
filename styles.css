@@ -1,0 +1,135 @@
+
+
+body{
+    background-color: #e6e6e6;
+    font-family: 'Markazi Text', serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+h2{
+    font-size: 3rem;
+    text-align: center;
+}
+
+h3{
+    font-size: 2rem;
+    text-align: center;
+}
+
+header{
+    display: flex;
+    gap:2rem;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+header > img{
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+
+    height: 10rem;
+    /* width will be set automatically */
+
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    background-color: rgba(255, 202, 55, 0.727);
+    border-radius: 2rem;
+    height: 3rem;
+
+    align-items: center;
+
+}
+
+nav li{
+    /* border: dashed green; */
+    height: 2rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #00580a;
+    font-size: larger;
+    font-weight: bold;
+}
+
+nav li a:hover{
+    color: azure;
+}
+
+
+section{
+    display: flex;
+    /* center flex box content on main axis */
+    justify-content: center; 
+    /* center flex box content on cross axis */
+    align-items: top;
+}
+
+article{
+    flex: 1;
+}
+
+ article[class = "bottom"] {
+    background-color: #94c451;
+    border-radius: 2rem;
+    margin: .5rem;
+    padding: 1rem;
+}
+
+article[class = "bottom"] > img{
+    width: 20vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* border-radius: 1rem; */
+}
+
+article[class = "top"]{
+    background-image: url("Lucky-Shrubs-logos/image.png");
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+
+    margin: 1rem;
+    padding: 1rem;
+
+    border-radius: 3rem;
+}
+
+footer{
+    display: flex;
+    flex:2;
+    justify-content: center;
+    align-content: center;
+}
+
+footer > p{
+    text-align: center;
+    align-content: center;
+}
+
+footer > img{
+    border-image: linear-gradient(#00580a,  rgba(255, 202, 55, 0.727));
+    border: dashed #00580a;
+    padding: 1rem;
+    width: 3rem;
+    margin-right: 3rem;
+}
